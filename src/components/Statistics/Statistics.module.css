@@ -1,0 +1,10 @@
+.statistic{
+    margin-left: 20px;
+    font-weight: 500;
+    
+}
+
+.statistic:nth-child(4){
+    border-bottom: 4px double royalblue;
+    width: 380px;
+}

@@ -1,0 +1,25 @@
+.wrapperBtn{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: royalblue;
+    color: #fff;
+    width: 80px;
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 250ms linear, color 250ms linear, transform 250ms linear;
+    
+}
+
+.button:hover{
+    background-color: red;
+    color: #fff;
+    transform: scale(1.05);
+}
