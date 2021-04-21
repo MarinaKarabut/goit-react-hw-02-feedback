@@ -1,5 +1,6 @@
 import React from 'react';
 import {v4} from 'uuid'
+import PropTypes from "prop-types";
 
 import styles from './FeedbackOptions.module.css'
 
@@ -17,3 +18,12 @@ function FeedbackOptions({options,onLeaveFeedback}) {
 };
 
 export default FeedbackOptions;
+
+FeedbackOptions.defaultProps = {
+    options: [],
+}
+
+FeedbackOptions.propTypes = {
+    options: PropTypes.arrayOf(PropTypes.string),
+    onLeaveFeedback: PropTypes.func.isRequired,
+}
