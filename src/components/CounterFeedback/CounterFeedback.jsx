@@ -35,7 +35,7 @@ class CounterFeedback extends Component{
         if(!totalValue) {
             return 0
         }
-        const percent = (good * 100 / totalValue).toFixed(0)
+        const percent = (good * 100 / totalValue).toFixed()
         return percent 
     }
 
