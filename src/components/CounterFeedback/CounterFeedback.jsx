@@ -24,8 +24,8 @@ class CounterFeedback extends Component{
     }
 
     countTotalFeedback(){
-        const {good, neutral, bad} = this.state
-        const totalValue = good + neutral + bad
+        const arrayTotal = Object.values(this.state)
+        const totalValue = arrayTotal.reduce((acc, value)=>  acc + value,0)
         return totalValue
     }
 
