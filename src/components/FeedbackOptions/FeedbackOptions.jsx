@@ -24,6 +24,6 @@ FeedbackOptions.defaultProps = {
 }
 
 FeedbackOptions.propTypes = {
-    options: PropTypes.arrayOf(PropTypes.string),
+    options: PropTypes.arrayOf(PropTypes.oneOf(['good', 'neutral', 'bad'])), // obOf
     onLeaveFeedback: PropTypes.func.isRequired,
 }
